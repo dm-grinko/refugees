@@ -1,11 +1,11 @@
 #!/bin/sh
 # ./deploy
 
-rm -rf ./docs
+rm -rf ./dist
 
 npm run build
 
-cd ./docs
+cd ./dist
 
 # sed -i '' 's/old/new/g' index.html
 # sed -i '' 's/base href=\"/base href=\"\/refugees/g' index.html
@@ -19,7 +19,7 @@ git commit -m update
 
 git status
 
-# git push origin master
+git push origin master
 
 git push heroku master
 # heroku login
