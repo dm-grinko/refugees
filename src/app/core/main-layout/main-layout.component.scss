@@ -1,0 +1,50 @@
+$a: 500px;
+$yellow: #FFD700;
+$blue: #3352DC;
+$dark: #444444;
+.header {
+    top: 0;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    .left-section,
+    .right-section {
+        display: inline-block;
+        position: relative;
+        top: 10px;
+        font-weight: 600;
+        color: $dark;
+        width: 100%;
+    }
+    .left-section {
+        text-align: left;
+    }
+    .right-section {
+        text-align: right;
+    }
+    span>a {
+        font-weight: 600;
+        color: $dark;
+        text-decoration: none;
+        position: relative;
+        top: 0px;
+    }
+}
+
+.city {
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: $a;
+    background-color: $blue;
+    background-image: url("assets/images/city.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+.content {
+    padding-top: calc(#{$a} - 50px);
+}
