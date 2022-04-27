@@ -5,7 +5,7 @@ rm -rf ./dist
 
 npm run build
 
-cd ./dist
+# cd ./dist
 
 # sed -i '' 's/old/new/g' index.html
 # sed -i '' 's/base href=\"/base href=\"\/refugees/g' index.html
