@@ -9,27 +9,29 @@ $dark: #444444;
     width: 100%;
     height: 50px;
     background-color: #fff;
-    .left-section,
-    .right-section {
-        display: inline-block;
-        position: relative;
-        top: 10px;
-        font-weight: 600;
-        color: $dark;
-        width: 100%;
-    }
-    .left-section {
-        text-align: left;
-    }
-    .right-section {
-        text-align: right;
-    }
-    span>a {
-        font-weight: 600;
-        color: $dark;
-        text-decoration: none;
-        position: relative;
-        top: 0px;
+    .header-items {
+        display: flex;
+        justify-content: space-between;
+        .left-section,
+        .right-section {
+            display: inline-block;
+            font-weight: 600;
+            color: $dark;
+            line-height: 50px;
+        }
+        .left-section {
+            text-align: left;
+        }
+        .right-section {
+            padding-left: 132px;
+            text-align: right;
+        }
+        div>a {
+            font-weight: 600;
+            color: $dark;
+            text-decoration: none;
+            line-height: 50px;
+        }
     }
 }
 
@@ -47,4 +49,74 @@ $dark: #444444;
 
 .content {
     padding-top: calc(#{$a} - 50px);
+}
+
+.footer {
+    width: 100%;
+    background-color: #fff;
+    height: 150px;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 40px;
+    span {
+        font-weight: bold;
+        color: $yellow;
+        &:last-child {
+            color: $blue;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .header {
+        height: 80px;
+        padding-top: 12px;
+        .header-items {
+            .left-section,
+            .right-section {
+                line-height: 28px;
+            }
+            div>a {
+                line-height: 28px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer>span {
+        font-size: 16px;
+    }
+    .header-items {
+        .left-section,
+        .right-section {
+            font-size: 14px;
+        }
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .header {
+        .header-items {
+            .right-section {
+                padding-left: 20px;
+                text-align: right;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 290px) {
+    .footer>span {
+        font-size: 10px;
+    }
+    .header {
+        height: 100px;
+        .header-items {
+            .right-section {
+                padding-left: 20px;
+                text-align: right;
+            }
+        }
+    }
 }

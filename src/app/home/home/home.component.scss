@@ -50,19 +50,3 @@ $dark: #444444;
         }
     }
 }
-
-.footer {
-    width: 100%;
-    background-color: #fff;
-    height: 150px;
-    text-align: center;
-    padding-top: 50px;
-    font-size: 40px;
-    span {
-        font-weight: bold;
-        color: $yellow;
-        &:last-child {
-            color: $blue;
-        }
-    }
-}
