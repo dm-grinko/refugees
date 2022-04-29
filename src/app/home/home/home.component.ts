@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
     },
     {
       img: 'assets/images/car.svg',
-      title: 'ПОКУПКА И РЕГИСТРАЦИЯ МАШИНЫ',
+      title: 'ВОДИТЕЛЬСКОЕ УДОСТОВЕРЕНИЕ',
       link: '/car'
     },
     {
