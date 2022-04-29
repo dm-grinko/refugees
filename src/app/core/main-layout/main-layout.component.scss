@@ -49,15 +49,17 @@ $dark: #444444;
 
 .content {
     padding-top: calc(#{$a} - 50px);
+    min-height: 100vh;
+    padding-bottom: 200px;
 }
 
 .footer {
     width: 100%;
     background-color: #fff;
-    height: 150px;
+    height: 120px;
     text-align: center;
-    padding-top: 50px;
-    font-size: 40px;
+    font-size: 28px;
+    line-height: 110px;
     span {
         font-weight: bold;
         color: $yellow;
@@ -65,6 +67,9 @@ $dark: #444444;
             color: $blue;
         }
     }
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 
 @media only screen and (max-width: 767px) {
