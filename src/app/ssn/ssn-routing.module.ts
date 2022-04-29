@@ -4,7 +4,7 @@ import { SsnComponent } from './ssn/ssn.component';
 
 const routes: Routes = [
   {
-    path: 'ssn',
+    path: '',
     component: SsnComponent
   },
 ];

@@ -20,7 +20,7 @@ const routes: Routes = [
     component: MainLayoutComponent,
     children: [
       {
-        path: '**',
+        path: '',
         loadChildren: () => import('./ssn/ssn.module').then((m) => m.SsnModule),
       },
     ],
@@ -30,7 +30,7 @@ const routes: Routes = [
     component: MainLayoutComponent,
     children: [
       {
-        path: '**',
+        path: '',
         loadChildren: () =>
           import('./insurence/insurence.module').then((m) => m.InsurenceModule),
       },
@@ -41,7 +41,7 @@ const routes: Routes = [
     component: MainLayoutComponent,
     children: [
       {
-        path: '**',
+        path: '',
         loadChildren: () => import('./car/car.module').then((m) => m.CarModule),
       },
     ],
@@ -51,7 +51,7 @@ const routes: Routes = [
     component: MainLayoutComponent,
     children: [
       {
-        path: '**',
+        path: '',
         loadChildren: () =>
           import('./food/food.module').then((m) => m.FoodModule),
       },
@@ -62,7 +62,7 @@ const routes: Routes = [
     component: MainLayoutComponent,
     children: [
       {
-        path: '**',
+        path: '',
         loadChildren: () =>
           import('./bank/bank.module').then((m) => m.BankModule),
       },
@@ -73,7 +73,7 @@ const routes: Routes = [
     component: MainLayoutComponent,
     children: [
       {
-        path: '**',
+        path: '',
         loadChildren: () =>
           import('./work/work.module').then((m) => m.WorkModule),
       },

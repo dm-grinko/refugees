@@ -1,4 +1,10 @@
 $a: 500px;
+.content {
+    padding-top: calc(#{$a} - 50px);
+    min-height: 100vh;
+    padding-bottom: 200px;
+}
+
 $yellow: #FFD700;
 $blue: #3352DC;
 $dark: #444444;

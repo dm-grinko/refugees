@@ -2,6 +2,12 @@ $a: 500px;
 $yellow: #FFD700;
 $blue: #3352DC;
 $dark: #444444;
+.content {
+    padding-top: 100px;
+    min-height: 100vh;
+    padding-bottom: 200px;
+}
+
 .header {
     top: 0;
     position: absolute;
@@ -45,12 +51,6 @@ $dark: #444444;
     background-image: url("/assets/images/city.png");
     background-repeat: repeat-x;
     background-position: bottom;
-}
-
-.content {
-    padding-top: calc(#{$a} - 50px);
-    min-height: 100vh;
-    padding-bottom: 200px;
 }
 
 .footer {
